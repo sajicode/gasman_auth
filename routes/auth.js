@@ -23,12 +23,13 @@ router.post(
 		}
 
 		try {
-			const { fullName, email, phone, _id } = req.body;
+			const { fullName, email, phone, _id, deviceID } = req.body;
 			const payload = {
 				user: {
 					fullName,
 					email,
 					phone,
+					deviceID,
 					id: _id
 				}
 			};
